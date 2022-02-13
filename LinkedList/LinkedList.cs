@@ -24,13 +24,13 @@ namespace LinkedList
             }
         }
 
-        public Node InsertLast(int data)
+        public void InsertLast(int data)
         {
             Node newnode = new Node(data);
             if (head == null)
             {
                 head = newnode;
-                return head;
+                
             }
             else
             {
@@ -40,7 +40,7 @@ namespace LinkedList
                     Temp = Temp.next;
                 }
                 Temp.next = newnode;
-                return head;
+                
             }
         }
 
@@ -72,6 +72,22 @@ namespace LinkedList
                 temp.next = newnode;
             }
         }
+
+        public void DeleteFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
+
+
+
+
 
         public int Count()
         {
