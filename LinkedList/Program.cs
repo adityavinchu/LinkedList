@@ -12,16 +12,22 @@ namespace LinkedList
         {
             LinkedList linkedlist = new LinkedList();
 
-
-            linkedlist.InsertLast(56);
+            linkedlist.InsertFirst(85);
+            linkedlist.InsertFirst(45);
             
+            linkedlist.InsertLast(56);
             linkedlist.InsertLast(70);
+            
             linkedlist.InsertAtPos(30, 2);
+            linkedlist.InsertAtPos(35, 6);
+
+
             linkedlist.DisplayAll();
 
             Console.WriteLine();
             Console.WriteLine("Total Nodes:" + linkedlist.Count());
 
+            linkedlist.DeleteFirst();
 
             linkedlist.DeleteLast();
 
@@ -29,7 +35,14 @@ namespace LinkedList
             linkedlist.DisplayAll();
             Console.WriteLine();
             Console.WriteLine("Total Nodes:" + linkedlist.Count());
-            Console.ReadLine();
+            
+
+            Console.WriteLine();
+            Console.WriteLine("Searched value is at position :"+linkedlist.Search(56));
+            
+
+Console.ReadLine();
+
         }
     }
 }

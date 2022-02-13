@@ -106,6 +106,22 @@ namespace LinkedList
         }
 
 
+        public int Search(int data)
+        {
+            Node temp = head;
+            int position = 0;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                { 
+                    return position; 
+                }
+                temp = temp.next;
+                position++;
+            }
+            return -1;
+        }
+
 
         public int Count()
         {
