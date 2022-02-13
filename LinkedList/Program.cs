@@ -23,7 +23,7 @@ namespace LinkedList
             Console.WriteLine("Total Nodes:" + linkedlist.Count());
 
 
-            linkedlist.DeleteFirst();
+            linkedlist.DeleteLast();
 
             Console.WriteLine();
             linkedlist.DisplayAll();
