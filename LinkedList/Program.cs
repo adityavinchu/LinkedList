@@ -23,10 +23,15 @@ namespace LinkedList
             Console.WriteLine();
             linkedlist.DisplayAll();
             Console.WriteLine();
-            Console.WriteLine("Total Nodes:" + linkedlist.Count());
+            Console.WriteLine("Total Nodes:" + linkedlist.Count()+"\n");
+
+            linkedlist.DeleteAtPos(2);
+            linkedlist.DisplayAll();
+            Console.WriteLine();
+            Console.WriteLine("Total Nodes:" + linkedlist.Count() + "\n");
 
 
-Console.ReadLine();
+            Console.ReadLine();
 
         }
     }

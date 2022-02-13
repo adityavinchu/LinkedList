@@ -106,6 +106,34 @@ namespace LinkedList
         }
 
 
+        public void DeleteAtPos(int pos)
+        {
+            if ((pos < 1) || pos > Count())
+            {
+                Console.WriteLine("Enter Valid Position\n");
+                return;
+            }
+            if (pos == 1)
+            {
+            DeleteFirst();
+            }
+            if (pos == Count())
+            {
+                DeleteLast();
+            }
+            else
+            {
+                Node temp = head;
+                for (int i = 0; i < pos - 1; i++)
+                {
+                    temp = temp.next;
+                }
+                Node targated = temp.next;
+                temp.next = targated.next;
+            }
+        }
+
+
         public int Search(int data)
         {
             Node temp = head;
