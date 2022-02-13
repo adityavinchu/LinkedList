@@ -36,9 +36,9 @@ namespace LinkedList
             {
                 while (temp != null)
                 {
-                    temp = temp.next;
                     Console.Write(temp.data + " ");
                     Console.Write("->");
+                    temp = temp.next;
                 }
             }
             Console.Write("NULL");

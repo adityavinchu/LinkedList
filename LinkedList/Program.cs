@@ -11,13 +11,12 @@ namespace LinkedList
         static void Main(string[] args)
         {
             LinkedList linkedlist = new LinkedList();
+
+
             linkedlist.DisplayAll();
             Console.WriteLine();
-
-            linkedlist.InsertFirst(56);
-            linkedlist.InsertFirst(30);
-            linkedlist.InsertFirst(70);
             Console.ReadLine();
+
 
         }
     }
