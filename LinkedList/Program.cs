@@ -13,6 +13,10 @@ namespace LinkedList
             LinkedList linkedlist = new LinkedList();
 
 
+            linkedlist.InsertFirst(70);
+            linkedlist.InsertFirst(30);
+            linkedlist.InsertFirst(56);
+
             linkedlist.DisplayAll();
             Console.WriteLine();
             Console.ReadLine();
