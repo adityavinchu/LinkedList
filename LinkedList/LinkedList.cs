@@ -24,6 +24,26 @@ namespace LinkedList
             }
         }
 
+        public Node InsertLast(int data)
+        {
+            Node newnode = new Node(data);
+            if (head == null)
+            {
+                head = newnode;
+                return head;
+            }
+            else
+            {
+                Node Temp = head;
+                while (Temp.next != null)
+                {
+                    Temp = Temp.next;
+                }
+                Temp.next = newnode;
+                return head;
+            }
+        }
+
 
         public void DisplayAll()
         {

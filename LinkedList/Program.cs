@@ -13,9 +13,9 @@ namespace LinkedList
             LinkedList linkedlist = new LinkedList();
 
 
-            linkedlist.InsertFirst(70);
-            linkedlist.InsertFirst(30);
-            linkedlist.InsertFirst(56);
+            linkedlist.InsertLast(56);
+            linkedlist.InsertLast(30);
+            linkedlist.InsertLast(70);
 
             linkedlist.DisplayAll();
             Console.WriteLine();
