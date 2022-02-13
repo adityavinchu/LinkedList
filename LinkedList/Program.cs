@@ -12,34 +12,19 @@ namespace LinkedList
         {
             LinkedList linkedlist = new LinkedList();
 
-            linkedlist.InsertFirst(85);
-            linkedlist.InsertFirst(45);
-            
-            linkedlist.InsertLast(56);
-            linkedlist.InsertLast(70);
-            
-            linkedlist.InsertAtPos(30, 2);
-            linkedlist.InsertAtPos(35, 6);
-
+            linkedlist.InsertFirst(70);
+            linkedlist.InsertFirst(30);
+            linkedlist.InsertFirst(56);
 
             linkedlist.DisplayAll();
 
-            Console.WriteLine();
-            Console.WriteLine("Total Nodes:" + linkedlist.Count());
-
-            linkedlist.DeleteFirst();
-
-            linkedlist.DeleteLast();
+            linkedlist.InsertAtPos(40,3);
 
             Console.WriteLine();
             linkedlist.DisplayAll();
             Console.WriteLine();
             Console.WriteLine("Total Nodes:" + linkedlist.Count());
-            
 
-            Console.WriteLine();
-            Console.WriteLine("Searched value is at position :"+linkedlist.Search(56));
-            
 
 Console.ReadLine();
 
