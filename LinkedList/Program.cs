@@ -14,11 +14,13 @@ namespace LinkedList
 
 
             linkedlist.InsertLast(56);
-            linkedlist.InsertLast(30);
+            
             linkedlist.InsertLast(70);
-
+            linkedlist.InsertAtPos(30, 2);
             linkedlist.DisplayAll();
+            
             Console.WriteLine();
+            Console.WriteLine("Total Nodes:"+ linkedlist.Count());
             Console.ReadLine();
 
 
